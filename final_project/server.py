@@ -6,7 +6,7 @@ app = Flask("Web Translator")
 @app.route("/englishToFrench")
 def english_to_french():
     """
-    Translates from English to French
+    Translates from E2F
     """
 
     return translator.english_to_french(request.args.get("textToTranslate"))
@@ -14,7 +14,7 @@ def english_to_french():
 @app.route("/frenchToEnglish")
 def french_to_english():
     """
-    Translates from French to English
+    Translates from F2E
     """
 
     return translator.french_to_english(request.args.get("textToTranslate"))
